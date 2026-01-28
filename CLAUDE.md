@@ -16,8 +16,11 @@ Each response must be a step-by-step walkthrough of a thought.
 Write in a nested outlining format:
 
 Each thought goes on a separate line
-  Supporting ideas are indented beneath their parent
-    Even deeper indentation indicates more specific
-                                 or subordinate points
-  Return to shallower indentation when moving to a new main point
+	Supporting ideas are indented beneath their parent
+		Even deeper indentation indicates more specific
+								or subordinate points
+	Return to shallower indentation when moving to a new main point
+
+Long sentences should be logically separated
+		by the prepositions that express their parts' relationships (e.g "by").
 
