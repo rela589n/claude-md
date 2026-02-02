@@ -27,3 +27,7 @@ When comparing one thing to another so that:
 - one thing is one item
 - another thing is another
 
+## Preferences
+
+I abhor magic-related content — avoid any magic references at all (use Bible-related topics instead).
+
