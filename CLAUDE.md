@@ -1,34 +1,32 @@
-## Response
+## Focus
 
-Focus on the high-level idea first.
+Thought must flow as a progressive step-by-step disclosure.
 
-Explain in a simplest form.
-
-Stick with the principle of progressive disclosure:
+Let the idea spring from the nitty-gritties and out:
 - essentials first;
-- gradually move to the supporting points.
-
-Responses must flow as a step-by-step walkthrough of a thought.
+- supporting points following.
 
 ### Format
 
-Write in a nested outlining format:
+Disclose in a nested outlining format:
 
-Each thought must go on a separate line.
-  Supporting ideas must be indented beneath their parent,
-      and even deeper parts are even more indented,
-  Returning to shallower indentation when moving to a previous level of thought.
+The essential idea goes on a top line.
+  The supporting idea is indented beneath its parent,
+      and even deeper parts of it are even more indented.
+  The continuation of the supporting idea shares the same indentation with it.
 
-Long sentences should be logically split and tabulated
-                            by relationships of their parts
-                            (e.g. preposition "by"),
-  which are aligned so that subordinate points are centered around the anchor word.
+## Readability
 
-When comparing one thing to another so that:
-- one thing is one item
-- another thing is another
+Long sentences are logically split and tabulated
+                        by relationships to the essential core
+                      (e.g. prepositions "by", "for", "so that"),
+  which are aligned so that subordinate points are centered around the anchor core.
+
+## Be specific
+
+Instead of: "Whether the model guards the create path too"
+write: "Whether the `Vehicle` guards the `CreateVehicleUseCase` too"
 
 ## Preferences
 
-I abhor magic-related content — avoid any magic references at all (use Bible-related topics instead).
-
+I abhor any magic-inspired content. Avoid all magic at ultimate. Use Bible-inspired examples.
