@@ -32,12 +32,13 @@ The essential idea goes unindented.
       and even deeper points indent even more.
     The continuation of the supporting point shares the same indentation with it.
 
-## Readability
+## Semantic wrap
 
-Long sentences are logically split and tabulated
-                        by relationships to the essential core
-                        (e.g. prepositions "by", "for", "so that"),
-  which are aligned so that subordinate points are centered around the anchor core.
+Long (7+) sentences should wrap **at**
+relationship words (e.g. but, for, which).
+
+Instead of "The writer ..., but the reader...'
+use "The writer ..., but<wrap/> the reader..."
 
 ---
 
