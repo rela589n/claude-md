@@ -1,12 +1,18 @@
 {
+  "cleanupPeriodDays": 365,
+  "env": {
+    "ANTHROPIC_BASE_URL": "http://127.0.0.1:8788/w/claude",
+    "_CLAUDE_CODE_ASSUME_FIRST_PARTY_BASE_URL": "1",
+    "ENABLE_TOOL_SEARCH": "auto"
+  },
   "permissions": {
     "allow": [
       "Bash(find:*)",
       "WebSearch"
     ],
-    "defaultMode": "default"
+    "defaultMode": "auto"
   },
-  "autoUpdatesChannel": "stable",
+  "model": "opus[1m]",
   "hooks": {
     "Notification": [
       {
@@ -18,6 +24,211 @@
           }
         ]
       }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/home/yevhen/.caveman/bin/caveman-proxy' native-hook claude --adapter '/home/yevhen/.nvm/versions/node/v22.23.2/lib/node_modules/@caveman-ai/cli/dist/native-hook-fast.js' --node '/home/yevhen/.nvm/versions/node/v22.23.2/bin/node'",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/home/yevhen/.caveman/bin/caveman-proxy' native-hook claude --adapter '/home/yevhen/.nvm/versions/node/v22.23.2/lib/node_modules/@caveman-ai/cli/dist/native-hook-fast.js' --node '/home/yevhen/.nvm/versions/node/v22.23.2/bin/node'",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/home/yevhen/.caveman/bin/caveman-proxy' native-hook claude --adapter '/home/yevhen/.nvm/versions/node/v22.23.2/lib/node_modules/@caveman-ai/cli/dist/native-hook-fast.js' --node '/home/yevhen/.nvm/versions/node/v22.23.2/bin/node'",
+            "timeout": 30
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/home/yevhen/.nvm/versions/node/v22.23.2/bin/node' '/home/yevhen/.nvm/versions/node/v22.23.2/bin/caveman' shrink-hook",
+            "timeout": 30
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/home/yevhen/.local/share/caveman-blocks/bin/caveman-blocks hook --harness claude",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/home/yevhen/.caveman/bin/caveman-proxy' native-hook claude --adapter '/home/yevhen/.nvm/versions/node/v22.23.2/lib/node_modules/@caveman-ai/cli/dist/native-hook-fast.js' --node '/home/yevhen/.nvm/versions/node/v22.23.2/bin/node'",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/home/yevhen/.caveman/bin/caveman-proxy' native-hook claude --adapter '/home/yevhen/.nvm/versions/node/v22.23.2/lib/node_modules/@caveman-ai/cli/dist/native-hook-fast.js' --node '/home/yevhen/.nvm/versions/node/v22.23.2/bin/node'",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/home/yevhen/.caveman/bin/caveman-proxy' native-hook claude --adapter '/home/yevhen/.nvm/versions/node/v22.23.2/lib/node_modules/@caveman-ai/cli/dist/native-hook-fast.js' --node '/home/yevhen/.nvm/versions/node/v22.23.2/bin/node'",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/home/yevhen/.caveman/bin/caveman-proxy' native-hook claude --adapter '/home/yevhen/.nvm/versions/node/v22.23.2/lib/node_modules/@caveman-ai/cli/dist/native-hook-fast.js' --node '/home/yevhen/.nvm/versions/node/v22.23.2/bin/node'",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/home/yevhen/.caveman/bin/caveman-proxy' native-hook claude --adapter '/home/yevhen/.nvm/versions/node/v22.23.2/lib/node_modules/@caveman-ai/cli/dist/native-hook-fast.js' --node '/home/yevhen/.nvm/versions/node/v22.23.2/bin/node'",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/home/yevhen/.caveman/bin/caveman-proxy' native-hook claude --adapter '/home/yevhen/.nvm/versions/node/v22.23.2/lib/node_modules/@caveman-ai/cli/dist/native-hook-fast.js' --node '/home/yevhen/.nvm/versions/node/v22.23.2/bin/node'",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/home/yevhen/.caveman/bin/caveman-proxy' native-hook claude --adapter '/home/yevhen/.nvm/versions/node/v22.23.2/lib/node_modules/@caveman-ai/cli/dist/native-hook-fast.js' --node '/home/yevhen/.nvm/versions/node/v22.23.2/bin/node'",
+            "timeout": 30
+          }
+        ]
+      }
     ]
-  }
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "ccstatusline",
+    "padding": 0,
+    "refreshInterval": 30
+  },
+  "enabledPlugins": {
+    "phpstorm-plugin@phpstorm-marketplace": true,
+    "sdd@sdd": false,
+    "mattpocock-skills@claude-plugins-official": true,
+    "chrome-devtools-mcp@chrome-devtools-plugins": true,
+    "claude-bionify@claude-bionify": true,
+    "caveman@caveman": true,
+    "i-have-adhd@i-have-adhd": true,
+    "frontend-design@anthropic-plugin-directory": true,
+    "beeline@beeline": false
+  },
+  "extraKnownMarketplaces": {
+    "sdd": {
+      "source": {
+        "source": "github",
+        "repo": "genkovich/sdd"
+      }
+    },
+    "chrome-devtools-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "ChromeDevTools/chrome-devtools-mcp"
+      }
+    },
+    "claude-bionify": {
+      "source": {
+        "source": "github",
+        "repo": "abullard1/claude-bionify"
+      }
+    },
+    "caveman": {
+      "source": {
+        "source": "github",
+        "repo": "JuliusBrussee/caveman"
+      }
+    },
+    "i-have-adhd": {
+      "source": {
+        "source": "github",
+        "repo": "ayghri/i-have-adhd"
+      }
+    },
+    "beeline": {
+      "source": {
+        "source": "directory",
+        "path": "/home/yevhen/.claude/mods/beeline"
+      }
+    }
+  },
+  "effortLevel": "high",
+  "modelSettings": {
+    "claude-opus-5": {
+      "effortLevel": "high"
+    },
+    "claude-sonnet-5": {
+      "effortLevel": "high"
+    },
+    "claude-opus-5-5": {
+      "effortLevel": "high",
+      "autoCompactWindow": "auto"
+    }
+  },
+  "autoUpdatesChannel": "latest",
+  "tui": "fullscreen",
+  "voice": {
+    "enabled": true,
+    "mode": "hold"
+  },
+  "skipWorkflowUsageWarning": true,
+  "voiceEnabled": true
 }
