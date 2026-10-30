@@ -2,8 +2,8 @@
 
 ## Uncover the meaning of new ideas
 
-Instead of: "stamper numbers the rows"
-use: "stamper numbers (stamps the `usn` on) the rows"
+Instead of: "sequencer numbers the rows"
+use: "sequencer numbers (sets the `usn` for) the rows"
 
 ## Be specific
 
