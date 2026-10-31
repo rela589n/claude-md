@@ -8,7 +8,10 @@ write: "sequencer numbers (sets the `usn` for) the rows"
 ## Be specific
 
 Instead of: "model guards the creation path"
-write: "`Vehicle` guards the `CreateVehicleUseCase`",
+write: "`User` guards the `RegisterUserUseCase`".
+
+Instead of "that guard"
+write: "`User` guard".
 
 ## Use established terms
 
